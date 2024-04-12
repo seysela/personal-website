@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" 
+    content="width=device-width,intitial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+    <body> <!--add a header-->
+        <header class="header">
+            <a href="index.html" class="logo">Home</a>
+            <nav class="navbar">
+                <a href="about.html" class="navbar">About me</a>
+            </nav>
+            <a href="contact.html" class="contact">Contact Me</a>
+        </header>
+    <section class="submit-form" id="contact"> <!--create a contact form-->
+        <form action="/submit-form" method="post">
+            <div class="input-box"> <!--helps with making boxes-->
+                <h2 class="contact-me">Contact Me</h2>
+                <input type="text" id= "name" name="fullname" placeholder="Full Name" required>
+                <input  type="email" id="email" name="email" placeholder="Email"required>
+                <input type="number" id= "phone" name= "phone" placeholder="Phone Number"required>
+                <textarea rows="10" name= "message" placeholder="Your message"></textarea> <!--makes this box bigger than the other ones-->
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </section>
+    </body>
+</html>
